@@ -1,81 +1,50 @@
-// import { criaCartaoFilme, } from './components/App.js';
-// import { buscaListaFilmes, buscaDetalhesFilme } from './test/API.js';
-import {renderizarFilmes} from './components/App.js';
+import { renderizarFilmes } from './components/App.js';
+import { renderizarDetalhes } from './components/Detalhes.js';
 
-// import { createMovieDetails } from './components/Detalhes.js';
-
-// const filtro = document.querySelector('#filtro');
-// if (filtro) {
-//   filtro.addEventListener('change', (event) => {
-//     console.log(event.target.value);
-//     filtrofiltrarFilmes(event.target.value);
-//   });
-// } else {
-//   console.error('Elemento #filtro não encontrado');
-// }
-
-// const ordem = document.querySelector('#ordem');
-// if (ordem) {
-//   ordem.addEventListener('change', (event) => {
-//     console.log(event.target.value);
-//     ordenaFilmes(event.target.value);
-//   });
-// } else {
-//   console.error('Elemento #ordem não encontrado');
-// }
-// function renderizarFilmes() { 
-//   const elementoRaiz = document.querySelector('#receberDados');
-//   buscaListaFilmes()
-//     .then(filmes => {
-//       const container = document.createElement('div');
-//       filmes.forEach((filme) => {
-//         const cartao = criaCartaoFilme(filme);
-//         container.appendChild(cartao);
-//       });
-//       elementoRaiz.appendChild(container);
-//     })
-//     .catch(erro => console.error(erro)); 
-// // }
-
-// async function renderizarDetalhes() {
-//   const elementoRaiz = document.querySelector('#receberDados');
-
-//   const idFilme = window.location.hash;
-//   console.log(idFilme);
-//   if (idFilme) {
-//     try {
-//       const detalhes = await createMovieDetails(idFilme); 
-//       elementoRaiz.innerHTML = '';
-//       elementoRaiz.appendChild(detalhes);
-//     } catch (erro) {
-//       console.error('Erro ao renderizar os detalhes do filme:', erro);
-//     }
-//   } else {
-//     renderizarFilmes(); 
-//   }
-// }
-
-// renderizarDetalhes();
-
+// Define uma função chamada lidarComMudancaNoHash
 function lidarComMudancaNoHash() {
-  renderizarFilmes(getMovieIdFromHash());
-}
 
+  // Verifica se existe um ID de filme no hash da URL
+  if (getMovieIdFromHash()) {
+
+    // Se existir, renderiza os detalhes desse filme
+    renderizarDetalhes(getMovieIdFromHash());
+
+  }
+  else {
+
+    // Se não existir, renderiza todos os filmes
+    renderizarFilmes();
+  }
+
+}
+// Adiciona um ouvinte de evento para mudanças no hash da URL
+// Quando o hash muda, a função lidarComMudancaNoHash é chamada
 window.addEventListener('hashchange', lidarComMudancaNoHash);
 
-
+// Adiciona um ouvinte de evento para o carregamento do conteúdo do documento
+// Quando o conteúdo do documento é carregado, a função renderizarFilmes é chamada
 document.addEventListener('DOMContentLoaded', () => {
   renderizarFilmes();
-}); 
+});
 
+// Define uma função chamada getMovieIdFromHash
 function getMovieIdFromHash() {
-  return window.location.hash.substring(1); // Removendo o '#' do hash
+
+  // Retorna o hash da URL (que é o ID do filme)
+  return window.location.hash;
 }
 
+// Define uma função chamada limparERetornar
 function limparERetornar() {
+
+  // Seleciona o elemento com id 'movies-container'
   const containerFilmes = document.getElementById('movies-container');
+
+  // Limpa o conteúdo do elemento com id 'movies-container'
   containerFilmes.innerHTML = '';
 
+  // Muda a URL para a página inicial
   window.location.href = '/';
   renderizarFilmes(); // Renderiza todos os filmes novamente após limpar e retornar
 }
