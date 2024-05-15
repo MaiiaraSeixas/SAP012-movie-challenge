@@ -1,7 +1,7 @@
 import { buscaListaFilmes } from "../test/API.js";
+import { renderizarDetalhes } from "./Detalhes.js";
 
 export const criaCartaoFilme = (filme) => {
-
   const { title, release_date, poster_path, id } = filme;
   const anoLancamento = release_date.split('-')[0];
   const caminhoPoster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
@@ -20,8 +20,8 @@ export const criaCartaoFilme = (filme) => {
   cabecalho.textContent = title;
 
   const paragrafo = document.createElement('p');
-
   paragrafo.textContent = `| ${anoLancamento} |`;
+
   link.appendChild(imagem);
   itemLista.appendChild(link);
   itemLista.appendChild(cabecalho);
@@ -29,28 +29,24 @@ export const criaCartaoFilme = (filme) => {
 
   return itemLista;
 };
-
-const criaListaFilmes = async () => {
-
-  const filmes = await buscaListaFilmes();
-
-  const lista = document.createDocumentFragment();
-
-  filmes.forEach(filme => {
-    const cartao = criaCartaoFilme(filme);
-    lista.appendChild(cartao);
-  });
-  return lista;
-};
-
-const App = () => {
+export  async function renderizarFilmes(movieId = null) {
+  const elementoRaiz = document.querySelector('#receberDados');
   
-  const el = document.createElement('div');
-  el.className = 'App';
-  criaListaFilmes().then(lista => {
-    el.appendChild(lista);
-  });
-  return el;
-};
+  try {
+    const filmes = await buscaListaFilmes();
+    const container = document.createElement('div');
 
-export default App;
+    filmes.forEach((filme) => {
+      if (!movieId || filme.id === movieId) {
+        const cartao = criaCartaoFilme(filme);
+        container.appendChild(cartao);
+      }
+    });
+
+    elementoRaiz.innerHTML = '';
+    elementoRaiz.appendChild(container);
+  } catch (erro) {
+    console.error(erro);
+  }
+  renderizarDetalhes(); /* chamada da função renderizarDetalhes */
+}

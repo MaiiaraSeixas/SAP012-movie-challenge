@@ -1,4 +1,5 @@
 import { buscaDetalhesFilme } from "../test/API.js"; 
+import { renderizarFilmes } from "./App.js";
 
 export async function createMovieDetails(movie_id) {
   try {
@@ -67,5 +68,24 @@ export async function createMovieDetails(movie_id) {
   } catch (err) {
     console.error('Ocorreu um erro ao buscar os detalhes do filme:', err);
     return null;
+  }
+}
+
+export async function renderizarDetalhes() {
+  const elementoRaiz = document.querySelector('#receberDados');
+
+const idFilme = `${movie_id.slice(1)}`;
+  
+  if (idFilme) {
+    try {
+      const detalhes = await createMovieDetails(idFilme); 
+      elementoRaiz.innerHTML = '';
+      elementoRaiz.appendChild(detalhes);
+    } catch (erro) {
+      console.error('Erro ao renderizar os detalhes do filme:', erro);
+    }
+  } else {
+    // Se não houver ID de filme, renderiza a lista de filmes inicial
+    renderizarFilmes(); 
   }
 }
