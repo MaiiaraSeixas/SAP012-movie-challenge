@@ -35,23 +35,3 @@ export const buscaListaFilmes = async (sortBy = 'popularity.desc') => {
       return 'Ocorreu um erro:' + err;
     }
   };
-  
-
-
-// const options = {
-//     method: 'GET',
-//     headers: {
-//       accept: 'application/json',
-//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MzUzNmY5ZWY5NmYxNDE3YmExYWI2Y2E1YWMwM2E1NCIsInN1YiI6IjY2MjY3OGZmMmRkYTg5MDE4N2UzY2Y3NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MGBoJj6mNvddRiSjXLHqte0NxkExEIuii1D3WeAGt8o'
-//     }
-//   };
-  
-//   fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_companies=10342', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
-// curl --request GET \
-//      --url 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_companies=10342' \
-//      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MzUzNmY5ZWY5NmYxNDE3YmExYWI2Y2E1YWMwM2E1NCIsInN1YiI6IjY2MjY3OGZmMmRkYTg5MDE4N2UzY2Y3NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MGBoJj6mNvddRiSjXLHqte0NxkExEIuii1D3WeAGt8o' \
-//      --header 'accept: application/json'
-    

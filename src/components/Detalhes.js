@@ -115,7 +115,5 @@ const idFilme = `${movie_id}`;
       // Em caso de erro, registra o erro no console      
       console.error('Erro ao renderizar os detalhes do filme:', erro);
     }
-  } else {
-
-  }
+  } 
 }
