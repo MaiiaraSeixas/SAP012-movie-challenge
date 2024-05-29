@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { buscaDetalhesFilme } from "../test/API";
 import { createMovieDetails, renderizarDetalhes, } from "./Detalhes";
 import { mockParaTeste2 } from "../test/Mock";
@@ -5,6 +8,7 @@ import { mockParaTeste2 } from "../test/Mock";
 // Cria um mock do módulo API.js no diretório test
 // A função jest.mock é usada para substituir o módulo API.js por uma versão simulada (mock)
 jest.mock("../test/API.js");
+
 
 
 
@@ -39,8 +43,11 @@ describe("Teste das funções createMovieDetailss", () => {
     it ("Testa a funcionalidade renderizarDetalhes", async () => {
 
         // Chama a função renderizarDetalhes com o argumento "1"
+        
+        const div = document.createElement("div");
+        div.setAttribute("id", "receberDados");
+        document.body.appendChild(div);
         renderizarDetalhes("1");
-
         // Verifica se um elemento com a classe .detalhes-filme existe no documento após a execução da função renderizarDetalhes
         expect(document.querySelector(".detalhes-filme")).toBeDefined();
     });
@@ -53,18 +60,15 @@ describe("Teste das funções createMovieDetailss", () => {
             value: { href: '' }
         });
 
-        // Cria o botão de retorno
-        const botaoRetorno = document.createElement('button');
-        botaoRetorno.textContent = 'Voltar';
-        botaoRetorno.onclick = function() {
-            window.location.href = '/';
-        };
+// const div = document.createElement("div");
+// div.setAttribute("id", "receberDados");
+document.body.appendChild(createMovieDetails("1"));
+buscaDetalhesFilme.mockResolvedValue(mockParaTeste2.expected[0]);
+const testeBotao = document.querySelector('button')
 
-        // Adiciona o botão ao documento
-        document.body.appendChild(botaoRetorno);
 
         // Simula o clique no botão
-        botaoRetorno.click();
+        testeBotao.click();
 
         // Verifica se o redirecionamento aconteceu
         expect(window.location.href).toBe('/');

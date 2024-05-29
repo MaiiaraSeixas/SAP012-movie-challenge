@@ -1,6 +1,6 @@
-/* Reset de alguns estilos padrões do navegador */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
+/* Reset de alguns estilos padrões do navegador */
 *{
   margin: 0%;
   padding: 0%;
@@ -48,6 +48,7 @@ ul, li {
 
 /* Estilizando o elemento de lista que contém as informações do filme */
 .infosApp {
+  max-width: 300px; /* Largura máxima do elemento .infosApp */
   list-style-type: none; /* Remove os marcadores da lista */
   margin: 10px; /* Espaçamento em volta do item */
   padding: 15px; /* Espaçamento interno */
@@ -89,6 +90,6 @@ ul, li {
 /* Estilizando o parágrafo com a data de lançamento */
 .infosApp p {
   font-size: 1em; /* Tamanho da fonte */
-  color: #777; /* Cor do texto */
+  color: #eeeded; /* Cor do texto */
   margin: 5px 0 0 0; /* Espaçamento vertical */
 }
