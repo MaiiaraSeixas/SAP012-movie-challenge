@@ -1,0 +1,94 @@
+/* Reset de alguns estilos padrões do navegador */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilizando o corpo */
+body {
+  background-color: rgba(93, 197, 184, 1); /* Define a cor de fundo do corpo como rgba(93, 197, 184, 1) */
+  background-image: url(Imagens/FundoReserva.jpg); /* Define a imagem de fundo do corpo */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+  background-size: cover; /* Faz com que a imagem de fundo cubra todo o corpo */
+  background-position: center; /* Centraliza a imagem de fundo no corpo */
+}
+
+/* Estilizando o cabeçalho */
+header {
+  display: flex; /* Define o modelo de layout flexível para o cabeçalho, permitindo que seus filhos sejam itens flexíveis */
+  align-items: center; /* Alinha os itens flexíveis ao centro na direção transversal (neste caso, verticalmente) */
+  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal (neste caso, horizontalmente) */
+  padding: 30px; /* Adiciona um preenchimento de 30px em todos os lados do cabeçalho */
+  background-image: url(Imagens/Logo.png); /* Define a imagem de fundo do cabeçalho */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+  background-size: contain; /* Faz com que a imagem de fundo cubra todo o cabeçalho */
+  background-color: rgba(93, 197, 184, 0.5); /* Define a cor de fundo do cabeçalho. Isso será visível onde a imagem de fundo não cobre ou é transparente */
+  }
+
+/* Estilizando o elemento de lista que contém as informações do filme */
+.listaFilmes {
+  display: flex; /* Define o modelo de layout flexível para o contêiner .listaFilmes, permitindo que seus filhos sejam itens flexíveis */
+  flex-wrap: wrap; /* Permite que os itens flexíveis dentro de .listaFilmes sejam distribuídos em várias linhas */
+  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal */
+  padding: 30px; /* Adiciona um preenchimento de 30px em todos os lados do contêiner .listaFilmes */
+}
+
+/* Estilizando a imagem do pôster do filme */
+ul, li {
+  list-style-type: none; /* Remove os marcadores de estilo de lista dos elementos ul e li */
+  display: flex; /* Define o modelo de layout flexível para os elementos ul e li */
+  flex-direction: column; /* Alinha os itens flexíveis dos elementos ul e li em uma coluna */
+  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal */
+  padding: 0; /* Remove o preenchimento dos elementos ul e li */
+}
+
+/* Estilizando o elemento de lista que contém as informações do filme */
+.infosApp {
+  list-style-type: none; /* Remove os marcadores da lista */
+  margin: 10px; /* Espaçamento em volta do item */
+  padding: 15px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s; /* Transição suave para transformações */
+}
+
+/* Estilizando a imagem do pôster do filme */
+.infosApp:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho quando hover */
+}
+
+/* Estilizando a imagem do pôster do filme */
+.capaCards {
+  width: 100%; /* Largura total do contêiner pai */
+  height: auto; /* Altura automática para manter a proporção */
+  border-radius: 4px; /* Cantos levemente arredondados */
+}
+
+/* Estilizando o contêiner de filmes */
+.listaFilmes {
+  display: flex; /* Usando flexbox para layout */
+  flex-wrap: wrap; /* Permitindo que os itens quebrem linha */
+  gap: 20px; /* Espaçamento entre os itens */
+  justify-content: center; /* Centralizando os itens horizontalmente */
+  padding: 20px; /* Espaçamento interno do contêiner */
+
+}
+
+/* Estilizando o cabeçalho do filme */
+.infosApp h2 {
+  font-size: 1.5em; /* Tamanho da fonte */
+  margin: 10px 0; /* Espaçamento vertical */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilizando o parágrafo com a data de lançamento */
+.infosApp p {
+  font-size: 1em; /* Tamanho da fonte */
+  color: #777; /* Cor do texto */
+  margin: 5px 0 0 0; /* Espaçamento vertical */
+}

@@ -13,7 +13,7 @@ export const criaCartaoFilme = (filme) => {
   const anoLancamento = release_date.split('-')[0];
 
   // Manipulação dinâmica de DOM: Criação de uma string para o caminho do poster do filme
-  const caminhoPoster = `https://image.tmdb.org/t/p/w500/${poster_path}`;
+  const caminhoPoster = `https://image.tmdb.org/t/p/w300/${poster_path}`;
 
   // Manipulação dinâmica de DOM: Criação de um novo elemento de lista
   const itemLista = document.createElement('li');
@@ -79,6 +79,7 @@ export async function renderizarFilmes(movieId = null) {
 
     // Manipulação dinâmica de DOM: Criação de um novo contêiner de div para os cartões de filme
     const container = document.createElement('div');
+    container.className = 'listaFilmes';
 
     // JavaScript: Uso de laços (while, for, for..of)
     // Itera sobre cada filme na lista de filmes

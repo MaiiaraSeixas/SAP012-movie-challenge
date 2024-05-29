@@ -37,7 +37,7 @@ describe("Testes para o módulo API", () => {
         expect(elemento.querySelector("p").textContent).toBe(`| ${mockParaTeste.itens[0].release_date.split("-")[0]} |`);
 
         // Verifica se o caminho do poster no elemento corresponde ao caminho do poster no mock
-        expect(elemento.querySelector("img").src).toBe(`https://image.tmdb.org/t/p/w500/${mockParaTeste.itens[0].poster_path}`);
+        expect(elemento.querySelector("img").src).toBe(`https://image.tmdb.org/t/p/w300/${mockParaTeste.itens[0].poster_path}`);
     });
     
     // Testa a função renderizarFilmes

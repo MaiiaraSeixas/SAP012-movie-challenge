@@ -34,17 +34,3 @@ function getMovieIdFromHash() {
   // Retorna o hash da URL (que é o ID do filme)
   return window.location.hash;
 }
-
-// Define uma função chamada limparERetornar
-// function limparERetornar() {
-
-//   // Seleciona o elemento com id 'movies-container'
-//   const containerFilmes = document.getElementById('movies-container');
-
-//   // Limpa o conteúdo do elemento com id 'movies-container'
-//   containerFilmes.innerHTML = '';
-
-//   // Muda a URL para a página inicial
-//   window.location.href = '/';
-//   renderizarFilmes(); // Renderiza todos os filmes novamente após limpar e retornar
-// }
