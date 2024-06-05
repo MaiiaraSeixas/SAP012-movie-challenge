@@ -1,174 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
-/* Reset de alguns estilos padrões do navegador */
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Estilizando o corpo */
 body {
-  background-color: rgba(93, 197, 184, 1); /* Define a cor de fundo do corpo como rgba(93, 197, 184, 1) */
-  background-image: url(Imagens/FundoReserva.jpg); /* Define a imagem de fundo do corpo */
-  background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
-  background-size: cover; /* Faz com que a imagem de fundo cubra todo o corpo */
-  background-position: center; /* Centraliza a imagem de fundo no corpo */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  background-color: rgba(93, 197, 184, 1);
+  background-image: url(Imagens/FundoReserva.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estilizando o cabeçalho */
 header {
-  display: flex; /* Define o modelo de layout flexível para o cabeçalho, permitindo que seus filhos sejam itens flexíveis */
-  align-items: center; /* Alinha os itens flexíveis ao centro na direção transversal (neste caso, verticalmente) */
-  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal (neste caso, horizontalmente) */
-  padding: 70px; /* Adiciona um preenchimento de 30px em todos os lados do cabeçalho */
-  background-image: url(Imagens/Logo.png); /* Define a imagem de fundo do cabeçalho */
-  background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
-  background-color: rgba(93, 197, 184, 0.26); /* Define a cor de fundo do cabeçalho. Isso será visível onde a imagem de fundo não cobre ou é transparente */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  background-image: url(Imagens/Logo.png);
+  background-repeat: no-repeat;
+  background-color: rgba(93, 197, 184, 0.26);
 }
 
-/* Estilizando o elemento de lista que contém as informações do filme */
 .listaFilmes {
-  display: flex; /* Define o modelo de layout flexível para o contêiner .listaFilmes, permitindo que seus filhos sejam itens flexíveis */
-  flex-wrap: wrap; /* Permite que os itens flexíveis dentro de .listaFilmes sejam distribuídos em várias linhas */
-  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal */
-  padding: 30px; /* Adiciona um preenchimento de 30px em todos os lados do contêiner .listaFilmes */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-/* Estilizando a imagem do pôster do filme */
-ul, li {
-  list-style-type: none; /* Remove os marcadores de estilo de lista dos elementos ul e li */
-  display: flex; /* Define o modelo de layout flexível para os elementos ul e li */
-  flex-direction: column; /* Alinha os itens flexíveis dos elementos ul e li em uma coluna */
-  justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal */
-  padding: 0; /* Remove o preenchimento dos elementos ul e li */
+ul,li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+
 }
 
-/* Estilizando o elemento de lista que contém as informações do filme */
 .infosApp {
-  max-width: 300px; /* Largura máxima do elemento .infosApp */
-  list-style-type: none; /* Remove os marcadores da lista */
-  margin: 10px; /* Espaçamento em volta do item */
-  padding: 15px; /* Espaçamento interno */
-  border: 1px solid rgb(93, 197, 185); /* Borda cinza clara */
-  border-radius: 8px; /* Cantos arredondados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  transition: transform 0.3s; /* Transição suave para transformações */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  max-width: 300px;
+  list-style-type: none;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid rgb(93, 197, 185);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estilizando a imagem do pôster do filme */
 .infosApp:hover {
-  transform: scale(1.05); /* Aumenta levemente o tamanho quando hover */
+  transform: scale(1.05);
 }
 
-/* Estilizando a imagem do pôster do filme */
 .capaCards {
-  width: 100%; /* Largura total do contêiner pai */
-  height: auto; /* Altura automática para manter a proporção */
-  border-radius: 4px; /* Cantos levemente arredondados */
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
-/* Estilizando o contêiner de filmes */
 .listaFilmes {
-  display: flex; /* Usando flexbox para layout */
-  flex-wrap: wrap; /* Permitindo que os itens quebrem linha */
-  gap: 20px; /* Espaçamento entre os itens */
-  justify-content: center; /* Centralizando os itens horizontalmente */
-  padding: 20px; /* Espaçamento interno do contêiner */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 
 }
 
-/* Estilizando o cabeçalho do filme */
 .infosApp h2 {
-  font-size: 1.5em; /* Tamanho da fonte */
-  margin: 10px 0; /* Espaçamento vertical */
-  color: #ffffff; /* Cor do texto */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */;
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #ffffff;
+  font-family: 'Dosis', sans-serif;
+  ;
 }
 
-/* Estilizando o parágrafo com a data de lançamento */
 .infosApp p {
-  font-size: 1em; /* Tamanho da fonte */
-  color: #eeeded; /* Cor do texto */
-  margin: 5px 0 0 0; /* Espaçamento vertical */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  font-size: 1em;
+  color: #eeeded;
+  margin: 5px 0 0 0;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estiliza o contêiner de detalhes do filme */
 .detalhes-filme {
-  display: flex; /* Define um layout flexível */
-  flex-direction: row; /* Define que os itens sejam flexíveis na horizontal */
-  align-items: baseline; /* Centraliza os itens verticalmente */
-  padding: 20px; /* Adiciona um espaçamento interno de 20px */
-  border-radius: 8px; /* Arredonda os cantos */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
-  max-width: 800px; /* Define a largura máxima do contêiner */
-  margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona uma margem vertical */
-  background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o contêiner */
-  background-position: center; /* Centraliza a imagem de fundo */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estiliza a primeira div que mostra os detalhes do filme */
 .mostrar-detalhes {
-  display: flex; /* Define um layout flexível */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
-  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* Estiliza a imagem do poster do filme */
 .mostrar-detalhes img {
-  max-width: 100%; /* Define a largura máxima da imagem para 100% do contêiner pai */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Arredonda os cantos da imagem */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para dar profundidade */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave para a transformação */
-  border: 5px solid rgba(93, 197, 184, 0.58); /* Adiciona uma borda branca de 5px à imagem */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 5px solid rgba(93, 197, 184, 0.58);
 }
 
-/* Estiliza a segunda div que mostra mais detalhes do filme */
 .mostrar-detalhes-2 {
-  width: 100%; /* Define a largura da div para 100% do contêiner pai */
-  background-color:rgba(93, 197, 185, 0.58); /* Adiciona um fundo branco semitransparente para melhorar a legibilidade */
-  padding: 15px; /* Adiciona espaçamento interno */
-  border-radius: 8px; /* Arredonda os cantos */
+  width: 100%;
+  background-color: rgba(93, 197, 185, 0.58);
+  padding: 15px;
+  border-radius: 8px;
 }
 
-/* Estiliza o título do filme */
 .mostrar-detalhes-2 h2 {
-  font-size: 30px; /* Define o tamanho da fonte */
-  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
-  color: #ffffff; /* Define a cor do texto */
-  text-align: center; /* Centraliza o texto */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estiliza os parágrafos de descrição e outros detalhes do filme */
 .mostrar-detalhes-2 p {
-  font-size: 20px; /* Define o tamanho da fonte */
-  margin: 12px 0; /* Adiciona margens superior e inferior de 12px */
-  color: #ffffff; /* Define a cor do texto */
-  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+  font-size: 20px;
+  margin: 12px 0;
+  color: #ffffff;
+  font-family: 'Dosis', sans-serif;
 }
 
-/* Estiliza o botão de retorno */
 .mostrar-detalhes-2 button {
-  display: block; /* Define o botão como um elemento de bloco */
-  margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona margens superior e inferior de 20px */
-  padding: 10px 20px; /* Adiciona espaçamentos interno de 10px verticalmente e 20px horizontalmente */
-  font-size: 16px; /* Define o tamanho da fonte */
-  color: #fff; /* Define a cor do texto */
-  background-color: rgb(93, 197, 185); /* Define a cor de fundo do botão */
-  border: none; /* Remove qualquer borda */
-  border-radius: 4px; /* Arredonda os cantos do botão */
-  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(93, 197, 185);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* Estiliza o botão de retorno quando o cursor passa sobre ele */
 .mostrar-detalhes-2 button:hover {
-  background-color: rgba(93, 197, 185, 0.833); /* Altera a cor de fundo quando o botão é focalizado */
+  background-color: rgba(93, 197, 185, 0.833);
 }

@@ -3,479 +3,182 @@
 ## Índice
 
 - [1. Preâmbulo](#1-preâmbulo)
-- [2. Resumo do Projeto](#2-resumo-do-projeto)
-- [3. Objetivos de Aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações Gerais](#4-considerações-gerais)
-- [5. Considerações Técnicas](#5-considerações-técnicas)
-- [6. Critérios mínimos de aceitação do projeto](#6-critérios-mínimos-de-aceitação-do-projeto)
-- [7. Deploy](#7-deploy)
-- [8. Considerações para solicitar seu feedback do projeto](#8-considerações-para-solicitar-seu-feedback-do-projeto)
-- [9. Dicas, guias e leituras complementares](#9-dicas-guias-e-leituras-complementares)
+- [2. Resumo do projeto](#2-resumo-do-projeto)
+- [3. Ferramentas utilizadas](#3-ferramentas-utilizadas)
+- [4. Funcionalidades](#4-funcionalidades)
+- [5. Tarefas](#5-tarefas)
+- [6. Critérios ménimos ](#6-critérios-mínimos)
+- [7. Considerações finais](#7-considerações-finais)
+
 
 ---
+![Fundo1](src/Imagens/Tela1.png)
 
 ## 1. Preâmbulo
 
-A forma como assistimos à filmes mudou radicalmente nos últimos anos devido,
-em parte, ao surgimento dos serviços de
-[_streaming_](https://pt.wikipedia.org/wiki/Streaming)
-que nos permitem fazê-lo de onde estivermos e a qualquer momento. O melhor
-reflexo desse fenômeno é o sucesso da Netflix, HBO, Disney+ e outros.
+Prepare-se para uma viagem mágica pelo universo do Studio Ghibli, onde cada filme é uma porta para mundos fantásticos e histórias emocionantes!
 
-Acreditamos que há uma grande oportunidade de propor produtos/experiências
-inovadoras de todos os tipos usando dados de filmes
-(diretores, atores, sagas, sequências, datas, etc.). Podemos pensar em jogos,
-comunidades, catálogos, recomendações com base em preferências pessoais, etc.
-(apenas para citar algumas ideias óbvias).
+Se você é um fã de longa data ou está apenas começando a descobrir as maravilhas criadas por Hayao Miyazaki e Isao Takahata, temos o lugar perfeito para você! Aqui, você encontrará um catálogo dos 20 filmes mais populares do Studio Ghibli, que conquistaram corações ao redor do mundo.
 
-![Filmes](https://live.staticflickr.com/117/257368762_38bf6fcf9f_h.jpg)
+Explore os títulos mais amados, desde “Nausicaä do Vale do Vento” até “O Menino e a Garça”, e reviva os momentos mais memoráveis. Cada um desses filmes é uma obra-prima que promete levar você a uma jornada inesquecível através da animação japonesa.
+
+Estamos entusiasmados para compartilhar essa experiência cinematográfica com você! Prepare-se para se encantar com as histórias que definiram gerações e continuam a inspirar sonhadores ao redor do mundo. Seja bem-vindo(a) ao mundo do Studio Ghibli e vamos começar a assistir! 🎬✨
+
+![TelaLonga](src\Imagens\TelaLonga.jpg)
 
 ## 2. Resumo do projeto
 
-Neste projeto, você criará uma página da web destinada a visualizar, filtrar e
-ordenar o catálogo de filmes da
-[_The Movie Database API V3_](https://developer.themoviedb.org/docs).
-Esta página pode servir como um catálogo de filmes geral, mas também, se você
-quiser, pode considerar a possibilidade de projetá-la para um público específico
-com preferências como "filmes western" ou "filmes dos anos 80", por exemplo.
+Bem-vinde ao lançamento do nosso novo site, dedicado aos 20 melhores filmes do Studio Ghibli!
 
-Ainda que a decisão do que fazer é inteiramente sua, há algumas considerações
-gerais que se apresentam a seguir. Pode atender esses requisitos em
-projetos muitos distintos, depende de sua criatividade e do entendimento
-dos seus potenciais usuários!
+Neste portal, você encontrará uma seleção cuidadosamente curada dos filmes mais encantadores do Studio Ghibli, cada um acompanhado de informações detalhadas e fascinantes.
 
-## 3. Objetivos de aprendizagem
+O principal objetivo deste site é oferecer uma plataforma rica em conteúdo e visualmente atraente, que permita aos visitantes descobrir ou redescobrir as histórias e personagens icônicos que fizeram do Studio Ghibli um fenômeno mundial.
 
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+Estamos entusiasmados para guiá-la nesta jornada de descoberta e apreciação cinematográfica! Prepare-se para navegar por resenhas aprofundadas, análises de personagens e curiosidades sobre a produção dessas obras-primas. Explore conosco a magia e a arte do Studio Ghibli. Comece sua exploração agora! 🎬📽️🎞️
 
-### HTML
 
-- [ ] **Uso de HTML semântico**
+## 3. Ferramentas utilizadas
 
-  <details><summary>Links</summary><p>
+### Preparado do computador
 
-  * [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/html5/semantic-html)
-  * [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
+- Node.js
+- Git e Gitbash
+- Visual Studio Code
 
-### CSS
+### Organização e planejamento
 
-- [ ] **Uso de seletores de CSS**
+- GitHub
+- Notion
 
-  <details><summary>Links</summary><p>
+### Linguagens
 
-  * [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/css/intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
-</p></details>
+- HTML
+- CSS
+- Vanilla JavaScript
 
-- [ ] **Modelo de caixa (box model): borda, margem, preenchimento**
+### Geração de dados
 
-  <details><summary>Links</summary><p>
+- TMDB
 
-  * [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/css/boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
+### Prototipagem
 
-- [ ] **Uso de flexbox em CSS**
+- Figma
 
-  <details><summary>Links</summary><p>
 
-  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
-  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-</p></details>
+## 4. Funcionalidades
 
-### Web APIs
+Segue abaixo os detalhes das funcionalidades mínimas que foram implementadas:
 
-#### DOM (Document Object Model)
+- Navegação Intuitiva: Uma interface amigável e intuitiva, que facilita a exploração do universo do Studio Ghibli.
 
-- [ ] **Uso de seletores de DOM**
+- Galeria de Imagens: Uma coleção encantadora de imagens dos filmes mais queridos do Studio Ghibli, organizadas para sua apreciação visual.
 
-  <details><summary>Links</summary><p>
+- Informações Detalhadas: Para cada filme, você pode acessar uma sinopse completa, conhecer os títulos em dois idiomas, e descobrir a data de lançamento, mergulhando ainda mais fundo no mundo mágico de cada história.
 
-  * [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/dom/1-dom-methods-selection)
-  * [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
+![Tela2](src\Imagens\Tela2.jpg)
 
-- [ ] **Manipulação de eventos de DOM (listeners, propagação, delegação)**
+## 5. Tarefas
 
-  <details><summary>Links</summary><p>
+A partir das perguntas e respostas a seguir, foram criadas as histórias de usuários para a execução das tarefas do projeto.
 
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
+Quem são os principais usuários do produto?
 
-- [ ] **Manipulação dinâmica de DOM**
+Pessoas que gostam dos filmes do Studio Ghibli.
 
-  <details><summary>Links</summary><p>
+Quais são os objetivos desses usuários em relação ao produto?
 
-  * [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-</p></details>
+Ter uma lista de indicações de filme.
 
-### JavaScript
+**História de Usuário: Site dos 20 Melhores Filmes do Studio Ghibli**
 
-- [ ] **Variáveis (declaração, atribuição, escopo)**
+**Título: “Encantos do Studio Ghibli”**
 
-  <details><summary>Links</summary><p>
+**Descrição:**
+Como um cinéfilo apaixonado e fã do Studio Ghibli, você está sempre em busca de novas formas de apreciar e explorar as obras-primas desse icônico estúdio de animação japonês. Você descobre que um novo site foi lançado, dedicado a apresentar os 20 melhores filmes do Studio Ghibli, repleto de informações detalhadas, críticas, curiosidades e conteúdos exclusivos. Animado, você decide mergulhar nessa viagem mágica pelo mundo do Studio Ghibli, para redescobrir seus filmes favoritos e aprender mais sobre eles.
 
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/basics/values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/basics/variables)
-</p></details>
+**Tarefas:**
 
-- [ ] **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
+1. **Explorar a Lista dos Melhores Filmes:** Como visitante do site, você navega através da lista dos 20 melhores filmes do Studio Ghibli, que inclui títulos como "A Viagem de Chihiro", "Meu Amigo Totoro", "Princesa Mononoke" e muitos outros.
+2. **Ler Sinopses e Críticas:** Cada filme possui uma página dedicada com sinopse detalhada, críticas de especialistas e avaliações de outros fãs, ajudando você a entender melhor o contexto e a recepção de cada obra.
+3. **Descobrir Curiosidades e Bastidores:** Além das informações básicas, o site oferece curiosidades interessantes, fatos dos bastidores, entrevistas com diretores e animadores, e detalhes sobre a produção de cada filme.
+4. **Assistir a Trailers e Clipes Exclusivos:** Você pode assistir a trailers e clipes exclusivos dos filmes, incluindo cenas deletadas e vídeos dos bastidores, proporcionando uma experiência mais rica e imersiva.
+5. **Interagir com a Comunidade:** O site permite que você comente nas páginas dos filmes, compartilhe suas próprias críticas e interaja com outros fãs do Studio Ghibli, criando uma comunidade de apreciadores das animações.
 
-  <details><summary>Links</summary><p>
+**Critérios de Aceitação:**
 
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
+1. O site deve apresentar uma interface intuitiva e visualmente atraente, refletindo a estética mágica e encantadora dos filmes do Studio Ghibli.
+2. As informações sobre os filmes devem ser precisas, completas e bem-organizadas, facilitando a navegação e a leitura.
 
-- [ ] **Uso de laços (while, for, for..of)**
+**Notas Adicionais:**
+Este site sobre os 20 melhores filmes do Studio Ghibli é mais do que apenas uma coleção de informações; é um portal mágico para os fãs mergulharem no mundo encantado das animações do Studio Ghibli. Através da combinação de críticas detalhadas, curiosidades fascinantes e conteúdo exclusivo, o site visa proporcionar uma experiência enriquecedora e interativa que aproxime ainda mais os fãs de suas animações favoritas.
 
-  <details><summary>Links</summary><p>
+## Design de interface de usuário
+### Protótipo de baixa fidelidade
 
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
 
-- [ ] **Funções (params, args, return)**
+#### Protótipo de alta fidelidade
 
-  <details><summary>Links</summary><p>
+![Prototipo](src\Imagens\Prototipo.png)
 
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/functions/classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/functions/arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
+# Divisão de tarefas
+## T001
 
-- [ ] **Uso de linter (ESLINT)**
+**Desenvolvimento da Página HTML**: Esta fase envolveu uma dedicação meticulosa ao criar a estrutura fundamental do nosso site, que servirá como a espinha dorsal para todas as outras funcionalidades. Investi tempo e esforço para garantir a funcionalidade básica, utilizando técnicas de codificação. No processo, utilizei a API para renderizar um catálogo de filmes, exibindo-o em uma tabela com linhas e colunas. As imagens dos filmes foram geradas automaticamente pela API, assegurando que as informações fossem atualizadas e visualizadas de maneira clara e organizada, estabelecendo a base para futuras melhorias no design e na interatividade do site.
 
-- [ ] **Uso de identificadores descritivos (Nomenclatura e Semântica)**
+## T002
 
-- [ ] **Diferença entre expressões (expressions) e declarações (statements)**
+**Implementação do SPA (Single Page Application)**: Desenvolvi a estrutura do site como uma Single Page Application (SPA), permitindo que o conteúdo fosse carregado dinamicamente sem a necessidade de recarregar a página inteira. Isso proporciona uma experiência de navegação mais fluida e rápida para os usuários. Utilizando JavaScript, organizei as diferentes seções do site para serem exibidas conforme a interação do usuário.
 
-#### Tipos de dados
+**Desenvolvimento do Botão de Navegação**: Adicionei um botão de navegação interativo, que permite aos usuários alternar entre diferentes seções do site. Este botão, integrado à lógica do SPA, facilita a transição entre a visualização do catálogo de filmes e outras funcionalidades da página. A implementação deste botão garante uma usabilidade aprimorada, tornando a experiência do usuário mais intuitiva e eficiente.
 
-- [ ] **Diferenciar entre tipos de dados primitivos e não primitivos**
+## T003
 
-- [ ] **Arrays (arranjos)**
+**Organização do Código para Facilitar Testes**: Estruturei o código de maneira modular, separando as funcionalidades principais em arquivos distintos. Utilizei convenções de nomenclatura claras e comentários explicativos para cada seção do código. Além disso, implementei uma estrutura de pastas lógica e intuitiva, agrupando componentes relacionados, como scripts, estilos e testes, em diretórios apropriados. Essa organização facilita a compreensão do código por outros desenvolvedores e simplifica o processo de criação e execução de testes unitários e de integração, garantindo que o site seja mantido e escalado com eficiência.
 
-  <details><summary>Links</summary><p>
+## T004
 
-  * [Arranjos](https://curriculum.laboratoria.la/pt/topics/javascript/arrays)
-  * [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
+**Funcionalidade Implementada**: A funcionalidade principal implementada foi a visualização dinâmica do catálogo de filmes. Através da API, os dados dos filmes são carregados e exibidos em uma tabela, que inclui colunas para títulos, descrições, classificações e imagens dos filmes. A tabela é atualizada automaticamente, refletindo qualquer alteração nos dados da API. Além disso, cada linha da tabela é interativa, permitindo que os usuários cliquem para obter mais detalhes sobre cada filme. Esta funcionalidade estabelece uma base sólida para futuras melhorias, como a adição de filtros e buscas, melhorando ainda mais a experiência do usuário.
 
-- [ ] **Objetos (key, value)**
+## T005 
 
-  <details><summary>Links</summary><p>
+**Criação de Testes Unitários**: Desenvolvi uma série de testes unitários para garantir a robustez e a confiabilidade das funcionalidades implementadas. Utilizei frameworks de teste como Jest para JavaScript, permitindo a criação de testes automatizados. Cada módulo e função foi submetido a testes rigorosos, incluindo:
 
-  * [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/objects/objects)
-</p></details>
+- Teste de Carregamento da API: Verificação se os dados dos filmes são corretamente carregados e exibidos na tabela. Testei diferentes cenários, como respostas bem-sucedidas, erros de rede e dados incompletos.
+- Teste de Renderização da Tabela: Certificação de que a tabela é renderizada corretamente com as colunas adequadas e que os dados dos filmes aparecem na ordem correta.
+- Teste de Interatividade da Tabela: Validação de que cada linha da tabela é interativa e que, ao clicar, exibe os detalhes corretos do filme selecionado.
+- Teste do Botão de Navegação: Verificação da funcionalidade do botão de navegação, assegurando que ele permita a troca entre diferentes seções do site sem recarregar a página.
+- Teste de Atualização Dinâmica: Garantia de que a tabela se atualize dinamicamente quando novos dados são recebidos da API, sem necessidade de recarregar a página.
 
-#### Testing em Javascript
+Esses testes unitários foram integrados ao processo de desenvolvimento contínuo, utilizando ferramentas de integração contínua (CI) para executar automaticamente os testes a cada alteração no código. Isso assegura que novas funcionalidades ou mudanças no código não quebrem funcionalidades existentes, mantendo a integridade do site ao longo do tempo.
 
-- [ ] **Testes unitários (unit tests)**
+## T006
 
-  <details><summary>Links</summary><p>
+**Design Implementado**: Após estabelecer a funcionalidade básica, dediquei-me à implementação do design, assegurando que o site não fosse apenas funcional, mas também visualmente atraente. Utilizei CSS avançado e bibliotecas como Bootstrap para criar um layout responsivo e moderno. As cores, fontes e espaçamentos foram escolhidos cuidadosamente para proporcionar uma experiência de usuário agradável. As imagens dos filmes, geradas pela API, foram estilizadas para se integrarem harmoniosamente ao design geral da tabela, criando uma interface limpa e intuitiva.
 
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
+## 6. Critérios ménimos 
 
-#### Módulos
+**Critérios de aceitação mínimos do projeto**
 
-- [ ] **Módulos de ECMAScript (ES modules)**
+- Definição do produto
+- Histórias de usuário
+- Desenho da Interface de Usuário
+- Protótipo de baixa fidelidade
+- Protótipo de alta fidelidade
+- Testes de usabilidade
+- Implantação de la Interface de Usuário (HTML/CSS/JS)
+1. Deve ser utilizado o endpoint /discover/movie.
+2. A aplicação deve incluir paginação para explorar o catálogo por páginas.
+3. Cada filme deve exibir pelo menos: pôster, título original e ano de lançamento.
+4. Deve ser usado o endpoint /movie/{movie_id}.
+5. Para o filme, devem ser exibidos pelo menos: pôster, título original, ano de lançamento, gêneros, média de votação e total de votos.
+6. A interface deve permitir retornar à lista de filmes, mantendo o filtro e a ordenação.
 
-  <details><summary>Links</summary><p>
+## 7. Considerações finais
 
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
+Esta experiência no desenvolvimento do site do Studio Ghibli foi uma jornada solitária, o que proporcionou uma oportunidade única de expandir meu repertório de habilidades, adquirindo novas técnicas e competências fundamentais. A maestria em HTML, CSS e JavaScript foi conquistada por meio de uma meticulosa organização, eficiente gestão do tempo e uma comunicação interna eficaz.
 
-### Controle de Versões (Git e GitHub)
+Durante o desenvolvimento deste projeto, aprofundei meu conhecimento em desenvolvimento web, explorando as nuances de cada linguagem e aplicando as melhores práticas em design e usabilidade. A criação de uma estrutura robusta e modular, aliada a um design atraente e responsivo, destacou a importância da atenção aos detalhes e da busca pela excelência em cada etapa do processo.
 
-#### Git
+Embora tenha trabalhado sozinha, busquei feedback externo para validar minhas escolhas de design e funcionalidades, garantindo que o site atendesse às necessidades dos usuários. Essa abordagem colaborativa, mesmo que realizada de forma independente, enriqueceu minha experiência profissional e contribuiu para o sucesso do projeto.
 
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
-
-#### GitHub
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
-
-- [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-
-### Centrado no usuário
-
-- [ ] **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
-
-### Design de produto
-
-- [ ] **Criar protótipos para obter feedback e iterar**
-
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-### Pesquisa
-
-- [ ] **Planejar e executar testes de usabilidade**
-
-## 4. Considerações gerais
-
-Este projeto deve ser resolvido individualmente.
-
-O prazo estimado para concluir o projeto é de 4 Sprints.
-
-Os testes unitários devem cobrir no mínimo 90% de _statements_,
-_functions_, _lines_ e _branches_.
-
-Além disso, você deve definir a estrutura de pastas e arquivos que
-considerar necessária.
-Portanto, os testes e a configuração necessária para executá-los
-serão de sua responsabilidade, mas você pode se basear nos projetos anteriores.
-
-## 5. Considerações Técnicas
-
-A aplicação deve ser uma _Single Page App_.
-
-A aplicação não precisa ser _responsiva_.
-
-Para poder usar a API da
-[_The Movie Database API V3_](https://developer.themoviedb.org/docs),
-você deve criar uma conta e, em seguida, uma chave de acesso (_key_)
-e usá-la em cada solicitação que fizer ao servidor. Lembre-se de que
-você tem um limite máximo de 1.000 solicitações diárias à API por cada
-[IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP), portanto, aconselhamos
-a fazer um uso responsável desse recurso gratuito.
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, assim
-como toda a configuração de dependências:
-
-```text
-.
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── package.json
-├── README.md
-└── src
-    ├── components
-    │   ├── App.js
-    │   └── App.spec.js
-    ├── index.html
-    ├── main.js
-    └── style.css
-```
-
-### `src/index.html`
-
-Como no projeto anterior, existe um arquivo `index.html`. Como já sabe, aqui
-entra a página que vai ser exibida ao usuário. Também serve para indicar quais
-scripts serão utilizados e juntar tudo o que foi feito.
-
-### `src/main.js`
-
-Recomendamos usar `src/main.js` como ponto de entrada da sua aplicação. O
-_boilerplate_ inclui este arquivo para _conectar_ ou _montar_ o _componente_
-`App` no DOM. Desta forma poderemos fazer testes unitários de nossos
-componentes sen necessidade de que estejam conectados a um DOM global.
-
-Aqui é onde recomendamos implementar a sua SPA.
-
-Esta não é a única forma de dividir seu código. Pode usar mais arquivos e
-pastas, contanto que a estrutura esteja clara.
-
-### `src/components/App.js`
-
-Este arquivo contém um _componente_ de exemplo que mostra como podemos
-representar um _componente_ como uma função que retorna um `HTMLElement`. Na
-hora de construir interfaces, é útil pensar nos termos de _componentes_ ou
-_vistas_ que podemos ir aninhando umas dentro das outras. Te convidamos a
-pensar quais _componentes_ ou _caixinhas_ são necessárias para construir sua aplicação
-e que vá adicionando _componentes_ no directorio `components` para implementar
-cada um deles. Embora, novamente, no final, a forma de organizar seu arquivos depende
-de você e da sua equipe. Há muitas formas de faze-lo, e o _boilerplate_
-é apenas uma sugestão 🙊.
-
-### `src/components/App.spec.js`
-
-Este arquivo mostra como podemos criar arquivos com _especificações_
-(expressadas como testes unitários) de nossos componentes.
-
-## 6. Critérios mínimos de aceitação do projeto
-
-### Protótipo de Baixa Fidelidade
-
-O [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
-nos fornece uma primeira iteração do protótipo de baixa fidelidade da
-aplicação nesta [imagem](./docs/movie-list.png) e nesta
-[outra](./docs/movie-detail.png).
-
-### Definição do Produto
-
-O
-[_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
-nos apresenta
-este _backlog_ que é o resultado de seu trabalho com o cliente até
-o momento.
-
----
-
-#### [História do Usuário 1] Lista de Filmes
-
-Eu, como usuária, quero visualizar um catálogo de filmes em uma tabela
-(linhas e colunas).
-
-##### Critérios de aceitação
-
-- Deve ser utilizado o _endpoint_
-[/discover/movie](https://developer.themoviedb.org/reference/discover-movie).
-- A aplicação deve incluir paginação para explorar o catálogo por páginas.
-- Cada filme deve exibir pelo menos: pôster, título original e ano de lançamento.
-
-##### Definição de Pronto
-
-- Os componentes desenvolvidos devem ter testes unitários.
-
----
-
-#### [História do Usuário 2] Detalhes de um Filme
-
-Eu, como usuária, quero consultar os detalhes de um filme.
-
-##### Critérios de Aceitação
-
-- Deve ser usado o _endpoint_
-[/movie/{movie_id}](https://developer.themoviedb.org/reference/movie-details).
-- Para o filme, devem ser exibidos pelo menos: pôster, título original, ano
-de lançamento, gêneros, média de votação e total de votos.
-- A interface deve permitir retornar à lista de filmes, mantendo o filtro
-e a ordenação.
-
-##### Definição de Pronto
-
-- Os componentes desenvolvidos devem ter testes unitários.
-
----
-
-#### [História do Usuário 3 - Hacker Edition] Filtro e Ordenação
-
-Eu, como usuária, quero filtrar e ordenar o catálogo de filmes usando os
-critérios suportados pela _TheMovie Database API V3_.
-
-##### Critérios de Aceitação
-
-- Para filtrar, deve ser usado o _endpoint_
-[/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
-e um ou mais de seus parâmetros, como, por exemplo, _with_genres_.
-- Para ordenar, deve ser usado o _endpoint_
-[/discover/movie](https://developer.themoviedb.org/reference/discover-movie),
-e um ou mais de seus parâmetros, como, por exemplo, _sort_by_.
-- A paginação deve manter o filtro e a ordenação.
-- Cada filme deve exibir pelo menos: pôster, título original e ano de lançamento.
-
-##### Definição de Pronto
-
-- Os componentes desenvolvidos devem ter testes unitários.
-
----
-
-## 7. Deploy
-
-Você pode escolher o provedor (ou provedores) que preferir, juntamente com
-o mecanismo de deploy e estratégia de hospedagem. Recomendamos explorar
-as seguintes opções:
-
-- [Vercel](https://vercel.com/) é uma plataforma que permite
-fazer deploy da nossa aplicação web estática (HTML, CSS e JavaScript) e também
-permite fazer deploy de aplicativos da web que são executados no servidor (Node.js).
-- [Netlify](https://www.netlify.com/) é semelhante ao Vercel, sendo uma
-plataforma que permite fazer deploy da nossa aplicação web estática
-(HTML, CSS e JavaScript) e também permite fazer deploy de aplicativos
-da web que são executados no servidor (Node.js).
-
-## 8. Considerações para solicitar seu feedback do projeto
-
-Antes de agendar seu feedback do projeto com um coach, certifique-se de que seu projeto:
-
-- [ ] Tenha protótipo de alta fidelidade no Figma
-- [ ] Atende a todos os [critérios mínimos de aceitação](#6-criterios-minimos-de-aceitacao-do-projeto)
-- [ ] Está hospedado no GitHub
-- [ ] Está com o [deploy](#7-Deploy) realizado
-- [ ] Possui um README com a definição do produto
-
-Lembre-se de fazer uma autoavaliação dos objetivos de aprendizagem e habilidades
-pessoais em seu painel de estudante.
-
-Se você não concluiu todos os itens acima, não consideramos que você está pronto
-para sua sessão de feedback do projeto.
-
-## 9. Dicas, guias e leituras complementares
-
-### Protótipo de Alta Fidelidade
-
-Com base no protótipo de baixa fidelidade fornecido, crie um protótipo de alta
-fidelidade no Figma. Defina uma paleta de cores e um design gráfico. Tente concluir
-isso em 1 ou 2 dias.
-
-### Explore e consuma a API do The Movie Database
-
-Explore a [documentação](https://developer.themoviedb.org/docs) da API do
-The Movie Database. Comece lendo a seção
-[Getting Started](https://developer.themoviedb.org/docs/getting-started),
-depois
-[AUTHENTICATION --> Application](https://developer.themoviedb.org/docs/authentication-application)
-e, finalmente, as referências dos endpoints
-[/discover/movie](https://developer.themoviedb.org/reference/discover-movie)
-e
-[/movie/{movie_id}](https://developer.themoviedb.org/reference/movie-details).
-
-Em seguida, crie uma conta e gere uma chave (key) de acesso para consumir a API.
-
-Finalmente, faça solicitações HTTP de teste à API usando ferramentas como
-[Postman](https://www.postman.com/) ou
-[REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
-Identifique os cabeçalhos, corpo, verbos, códigos de resposta
-e codificações das solicitações.
-
-### Planeje a implementação da primeira história de usuário
-
-Pegue a primeira história de usuário e divida-a em tarefas menores. Identifique
-a ordem e a prioridade de cada tarefa. Documente seu planejamento no Trello ou
-Github Project.
-
-### Compreensão dos Conceitos de SPA (Single Page Application) e Roteamento
-
-Antes de começar a codificar, certifique-se de entender os conceitos de uma Aplicação de Página Única (SPA) e o roteamento de páginas. Isso permitirá criar uma experiência de usuário fluída e dinâmica. Pesquise as melhores práticas e ferramentas disponíveis para implementar uma SPA no seu projeto.
-
-Recomendamos fazer uma SPA mais simples usando `hashchange`.
-Esse [video](https://youtu.be/hf8x3A1e57Y) pode te ajudar a construir a sua SPA na `main.js`
-
-Caso sobre tempo e você queira se aprofundar nas rotas e na construção de uma SPA mais robusta,
-como `Hacker Edition`, você pode implementar esse [roteador com Javascript puro](https://github.com/Laboratoria/curriculum/blob/main/guides/router-spa/README.pt.md)
+Esta jornada no desenvolvimento do site do Studio Ghibli não apenas consolidou minhas habilidades técnicas, mas também fortaleceu minha confiança na minha capacidade de enfrentar desafios e entregar soluções de alta qualidade. Estou ansiosa para aplicar o que aprendi neste projeto em futuros empreendimentos, continuando a buscar a excelência e a inovação no mundo do desenvolvimento web.
