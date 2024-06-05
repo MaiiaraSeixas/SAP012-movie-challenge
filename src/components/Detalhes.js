@@ -1,4 +1,4 @@
-import { buscaDetalhesFilme } from "../test/API.js"; 
+import { buscaDetalhesFilme } from "../test/API.js";
 
 // Define uma função assíncrona chamada createMovieDetails que recebe um ID de filme
 export async function createMovieDetails(movie_id) {
@@ -70,10 +70,15 @@ export async function createMovieDetails(movie_id) {
     // Criação do botão de retorno
     // Cria um botão de retorno que, quando clicado, muda a URL para a página inicial
     const botaoRetorno = document.createElement('button');
+    // Define o texto do botão como 'Voltar'
     botaoRetorno.textContent = 'Voltar';
-    botaoRetorno.onclick = function() {
+    // Define o atributo 'onclick' do botão como uma função que redireciona para a página inicial
+    botaoRetorno.onclick = function () {
+      // Redireciona para a página inicial
       window.location.href = '/';
     };
+
+    // Adiciona o botão de retorno ao elemento de detalhes
     mostrarDetalhes2.appendChild(botaoRetorno);
 
     // Adiciona os elementos de detalhes ao contêiner de detalhes
@@ -97,17 +102,17 @@ export async function renderizarDetalhes(movie_id) {
   // Este elemento servirá como o contêiner raiz para os detalhes do filme
   const elementoRaiz = document.querySelector('#receberDados');
 
-// Converte o ID do filme para uma string
-// Este ID será passado como parâmetro na função createMovieDetails
-// Cria uma função assíncrona chamada createMovieDetails que recebe um ID de filme
-const idFilme = `${movie_id}`;
+  // Converte o ID do filme para uma string
+  // Este ID será passado como parâmetro na função createMovieDetails
+  // Cria uma função assíncrona chamada createMovieDetails que recebe um ID de filme
+  const idFilme = `${movie_id}`;
 
   // Verifica se houve um ID de filme
   // Se houver um ID de filme, tenta criar e renderizar os detalhes do filme
   if (idFilme) {
     try {
       // Cria os detalhes do filme
-      const detalhes = await createMovieDetails(idFilme); 
+      const detalhes = await createMovieDetails(idFilme);
       // Limpa o conteúdo do elemento raiz e adiciona os detalhes do filme
       elementoRaiz.innerHTML = '';
       elementoRaiz.appendChild(detalhes);
@@ -115,5 +120,5 @@ const idFilme = `${movie_id}`;
       // Em caso de erro, registra o erro no console      
       console.error('Erro ao renderizar os detalhes do filme:', erro);
     }
-  } 
+  }
 }

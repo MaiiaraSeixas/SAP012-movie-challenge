@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
   background-size: cover; /* Faz com que a imagem de fundo cubra todo o corpo */
   background-position: center; /* Centraliza a imagem de fundo no corpo */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
 }
 
 /* Estilizando o cabeçalho */
@@ -22,12 +23,11 @@ header {
   display: flex; /* Define o modelo de layout flexível para o cabeçalho, permitindo que seus filhos sejam itens flexíveis */
   align-items: center; /* Alinha os itens flexíveis ao centro na direção transversal (neste caso, verticalmente) */
   justify-content: space-between; /* Distribui o espaço igualmente entre os itens flexíveis ao longo da linha principal (neste caso, horizontalmente) */
-  padding: 30px; /* Adiciona um preenchimento de 30px em todos os lados do cabeçalho */
+  padding: 70px; /* Adiciona um preenchimento de 30px em todos os lados do cabeçalho */
   background-image: url(Imagens/Logo.png); /* Define a imagem de fundo do cabeçalho */
   background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
-  background-size: contain; /* Faz com que a imagem de fundo cubra todo o cabeçalho */
-  background-color: rgba(93, 197, 184, 0.5); /* Define a cor de fundo do cabeçalho. Isso será visível onde a imagem de fundo não cobre ou é transparente */
-  }
+  background-color: rgba(93, 197, 184, 0.26); /* Define a cor de fundo do cabeçalho. Isso será visível onde a imagem de fundo não cobre ou é transparente */
+}
 
 /* Estilizando o elemento de lista que contém as informações do filme */
 .listaFilmes {
@@ -52,10 +52,11 @@ ul, li {
   list-style-type: none; /* Remove os marcadores da lista */
   margin: 10px; /* Espaçamento em volta do item */
   padding: 15px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda cinza clara */
+  border: 1px solid rgb(93, 197, 185); /* Borda cinza clara */
   border-radius: 8px; /* Cantos arredondados */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
   transition: transform 0.3s; /* Transição suave para transformações */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
 }
 
 /* Estilizando a imagem do pôster do filme */
@@ -85,6 +86,7 @@ ul, li {
   font-size: 1.5em; /* Tamanho da fonte */
   margin: 10px 0; /* Espaçamento vertical */
   color: #ffffff; /* Cor do texto */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */;
 }
 
 /* Estilizando o parágrafo com a data de lançamento */
@@ -92,4 +94,81 @@ ul, li {
   font-size: 1em; /* Tamanho da fonte */
   color: #eeeded; /* Cor do texto */
   margin: 5px 0 0 0; /* Espaçamento vertical */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+}
+
+/* Estiliza o contêiner de detalhes do filme */
+.detalhes-filme {
+  display: flex; /* Define um layout flexível */
+  flex-direction: row; /* Define que os itens sejam flexíveis na horizontal */
+  align-items: baseline; /* Centraliza os itens verticalmente */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px */
+  border-radius: 8px; /* Arredonda os cantos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+  max-width: 800px; /* Define a largura máxima do contêiner */
+  margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona uma margem vertical */
+  background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir todo o contêiner */
+  background-position: center; /* Centraliza a imagem de fundo */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+}
+
+/* Estiliza a primeira div que mostra os detalhes do filme */
+.mostrar-detalhes {
+  display: flex; /* Define um layout flexível */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
+}
+
+/* Estiliza a imagem do poster do filme */
+.mostrar-detalhes img {
+  max-width: 100%; /* Define a largura máxima da imagem para 100% do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Arredonda os cantos da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para dar profundidade */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para a transformação */
+  border: 5px solid rgba(93, 197, 184, 0.58); /* Adiciona uma borda branca de 5px à imagem */
+}
+
+/* Estiliza a segunda div que mostra mais detalhes do filme */
+.mostrar-detalhes-2 {
+  width: 100%; /* Define a largura da div para 100% do contêiner pai */
+  background-color:rgba(93, 197, 185, 0.58); /* Adiciona um fundo branco semitransparente para melhorar a legibilidade */
+  padding: 15px; /* Adiciona espaçamento interno */
+  border-radius: 8px; /* Arredonda os cantos */
+}
+
+/* Estiliza o título do filme */
+.mostrar-detalhes-2 h2 {
+  font-size: 30px; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+  color: #ffffff; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+}
+
+/* Estiliza os parágrafos de descrição e outros detalhes do filme */
+.mostrar-detalhes-2 p {
+  font-size: 20px; /* Define o tamanho da fonte */
+  margin: 12px 0; /* Adiciona margens superior e inferior de 12px */
+  color: #ffffff; /* Define a cor do texto */
+  font-family: 'Dosis', sans-serif; /* Fonte da aplicação */
+}
+
+/* Estiliza o botão de retorno */
+.mostrar-detalhes-2 button {
+  display: block; /* Define o botão como um elemento de bloco */
+  margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona margens superior e inferior de 20px */
+  padding: 10px 20px; /* Adiciona espaçamentos interno de 10px verticalmente e 20px horizontalmente */
+  font-size: 16px; /* Define o tamanho da fonte */
+  color: #fff; /* Define a cor do texto */
+  background-color: rgb(93, 197, 185); /* Define a cor de fundo do botão */
+  border: none; /* Remove qualquer borda */
+  border-radius: 4px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+}
+
+/* Estiliza o botão de retorno quando o cursor passa sobre ele */
+.mostrar-detalhes-2 button:hover {
+  background-color: rgba(93, 197, 185, 0.833); /* Altera a cor de fundo quando o botão é focalizado */
 }

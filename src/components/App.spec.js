@@ -63,4 +63,30 @@ describe("Testes para o módulo API", () => {
         // Isso confirma que os filmes foram renderizados corretamente na página
         expect(document.querySelector(".infosApp")).toBeDefined();
     });
-    });
+
+    test ("redenrizarFilmes deve lidar com erros ao chamar buscaListaFilmes", async () => {
+
+        // Configura a função mock 'buscaListaFilmes' para retornar uma Promise rejeitada
+        // Isso simula um erro na resposta da função 'buscaListaFilmes'
+        buscaListaFilmes.mockRejectedValue();
+
+        // Define o HTML inicial para o teste, adicionando um div com id 'receberDados' ao corpo do documento
+        document.body.innerHTML = '<div id="receberDados"></div>';
+
+        // Chama a função 'renderizarFilmes' e espera que ela termine de executar
+        // 'renderizarFilmes' é a função que deve buscar a lista de filmes e renderizá-los na página
+
+        await renderizarFilmes();
+
+        // Verifica se a função 'buscaListaFilmes' foi chamada durante a execução de 'renderizarFilmes'
+        // Isso garante que a função de busca foi realmente utilizada no processo
+
+        expect(buscaListaFilmes).toHaveBeenCalled();
+
+        // Verifica se algum elemento com a classe 'erroApp' foi adicionado ao documento
+        // Isso confirma que os erros foram registrados corretamente na página  
+        expect(document.querySelector(".erroApp")).toBeDefined();
+
+});
+
+});
