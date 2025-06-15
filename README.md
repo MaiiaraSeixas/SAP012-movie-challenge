@@ -2,7 +2,7 @@ Movie Challenge 🎬
 
   Prepare-se para uma viagem mágica pelo universo do cinema, onde cada filme é uma porta para mundos fantásticos e histórias emocionantes! Este projeto foi criado para ser um portal onde fãs de cinema podem explorar, descobrir e revisitar obras que marcaram gerações. Seja bem-vindo(a) e vamos começar a assistir!
 
-#✨ Deploy do Projeto
+✨ Deploy do Projeto
 
 Acesse a aplicação em funcionamento através do link:
 https://sap-012-movie-challenge-kqg9.vercel.app/
